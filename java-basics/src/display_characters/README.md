@@ -1,4 +1,4 @@
-###### Display Characters
+## Display Characters
 
 
 Rohan wants a magic board, which displays a character for a corresponding number for his science exhibition. Help him to develop such application.
