@@ -50,7 +50,7 @@ Enter the no of students placed in CSE:10
 Enter the no of students placed in ECE:-50
 Enter the no of students placed in MECH:40
 ```
-####Sample Output 3:
+####Sample Output 4:
 ```
 Input is Invalid 
 ```
