@@ -1,4 +1,4 @@
-package com.kristina.java_intro.mall_parking_system;
+package mall_parking_system;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
