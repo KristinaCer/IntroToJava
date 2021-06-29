@@ -6,8 +6,8 @@ Requirement 1: Calculate the Commission amount
 
 The owner wants to calculate the commission amount based on the class type.
 
-Component Specification: Ticket(POJO class)
-![img.png](img.png)
+Component Specification: Ticket(POJO class)  <br />
+![img.png](img.png) 
 Component Specification: CommisionInfo Interface – This is a Functional Interface.
 ![img2.png](img2.PNG)
 
