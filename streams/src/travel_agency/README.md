@@ -10,9 +10,7 @@ Component Specification: Ticket(POJO class)  <br />
 ![img.png](img.png)  <br />
 Component Specification: CommisionInfo Interface – This is a Functional Interface. <br />
 ![img2.png](img2.PNG)  <br />
-
 Component Specification: UserInterfaceClass <br />
-
 ![img3.png](img3.PNG)  <br />
 
 he UserInterface class contains the main method.
