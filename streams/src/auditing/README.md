@@ -7,7 +7,7 @@ Help them to write a java program to find the employees whose salary is less tha
 
 Lego company wants to identify the employees whose salary is less than or equal to the salary specified by the auditors. By using the method fetchEmployeeDetails, identify the employees whose salary is less than or equal to the salary specified by the auditors.
 
-####  =Component Specification: Employee Interface- This is a Functional Interface.
+####  Component Specification: Employee Interface- This is a Functional Interface.
 
 Type(Interface)
 
@@ -31,16 +31,11 @@ This method is used to identify the employees whose salary is less than or equal
 
 #### Components
 
-##### Obtain Employee Details (method 1)
-
-public void addEmployeeDetails(String employeeName, double salary)
+##### public void addEmployeeDetails(String employeeName, double salary)
 
 This method is used to add the employee details into a map.
 
-
-##### Obtain Employee Details (method 2)
-
-public static EmployeeAudit findEmployee()
+##### public static EmployeeAudit findEmployee()
 
 This method should return an EmployeeAudit object. To do this, implement the Lambda expression and identify the employees whose salary is less than or equal to the salary passed as an argument.
 
