@@ -16,7 +16,7 @@ public class DB {
     public static Connection getConnection() throws ClassNotFoundException, SQLException {
         try{
             FileInputStream fis = null;
-            fis = new FileInputStream("C:\\Users\\krist\\OneDrive\\Documents\\GitHub\\IntroToJava\\src\\com\\kristina\\jdbc\\add_flight_using_jdbc\\database.properties");
+            fis = new FileInputStream("database.properties");
             props.load(fis);
             // load the Driver Class
             try {
