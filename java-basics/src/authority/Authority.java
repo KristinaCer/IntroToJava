@@ -13,7 +13,7 @@ public class Authority {
         fatherName = scanner.nextLine();
         String concat;
         // if name OR surname does not match the regex, then finish the program.
-        if (!(name.matches("(?i)(^[a-z])((?![? .,'-]$)[ .]?[a-z]){3,24}$") && fatherName.matches("(?i)(^[a-z])((?![? .,'-]$)[ .]?[a-z]){3,24}$"))) {
+        if (!(name.matches("^^[a-zA-Z]+[a-zA-Z\\s]*$"))){
             System.out.println("Invalid name");
             System.exit(0);
         } else{
