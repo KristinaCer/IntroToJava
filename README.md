@@ -1,1 +1,1 @@
-# IntroToJava
+# Java8 Hands-Ons
