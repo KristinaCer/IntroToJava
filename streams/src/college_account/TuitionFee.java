@@ -1,5 +1,5 @@
 package college_account;
-
-public interface TuitionFee {
-     int calculateTuitionFees(String courseType,int basicFee,int noOfSemesters);
+@FunctionalInterface
+public interface TuitionFee<T> {
+     Integer calculateTuitionFees(String courseType,int basicFee,int noOfSemesters);
 }
