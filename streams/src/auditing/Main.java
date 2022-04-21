@@ -1,6 +1,8 @@
 package auditing;
 
 
+import employee_loan_eligibility.Employee;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -26,15 +28,15 @@ public class Main {
     }
 
 
-    public static EmployeeAudit findEmployee() {
+    public static EmployeeAudit<ArrayList<String>> findEmployee() {
         // Fill the code
-         EmployeeAudit audit = salary -> {
-             ArrayList<String> name;
-              name = employeeMap.entrySet().stream()
-                      .filter(employeeMap -> employeeMap.getValue() <= salary)
+         EmployeeAudit<ArrayList<String>> audit = salaryToFind -> {
+             ArrayList<String> employeeNames;
+              employeeNames = employeeMap.entrySet().stream()
+                      .filter(employeeMap -> employeeMap.getValue() <= salaryToFind)
                       .map(employeeMap -> employeeMap.getKey())
                       .collect(Collectors.toCollection(ArrayList<String>::new));
-              return name;
+              return employeeNames;
          };
          return audit;
     }
@@ -67,8 +69,8 @@ public class Main {
                 System.out.println("Enter the salary to be searched");
                 int salaryToFind = Integer.parseInt(sc.nextLine());
                 System.out.println("Employee List");
-                EmployeeAudit emp = findEmployee();
-                ArrayList<String> s = emp.fetchEmployeeDetails(salaryToFind);
+                EmployeeAudit<ArrayList<String>> employeeFinder = findEmployee();
+                ArrayList<String> s = employeeFinder.fetchEmployeeDetails(salaryToFind);
                 if (s.isEmpty()) {
                     System.out.println("No Employee found");
                 } else {
