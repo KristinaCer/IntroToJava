@@ -27,9 +27,8 @@ public class Main {
     this.getEmployeeMap().put(employeeName, salary);
   }
 
-  public static EmployeeAudit<ArrayList<String>> findEmployee() {
     // Fill the code
-    EmployeeAudit<ArrayList<String>> audit =
+    static EmployeeAudit<ArrayList<String>> audit =
         salaryToFind -> {
           ArrayList<String> employeeNames;
           employeeNames =
@@ -39,8 +38,8 @@ public class Main {
                   .collect(Collectors.toCollection(ArrayList<String>::new));
           return employeeNames;
         };
-    return audit;
-  }
+
+
 
   public static void main(String[] args) {
 
@@ -70,8 +69,7 @@ public class Main {
         System.out.println("Enter the salary to be searched");
         int salaryToFind = Integer.parseInt(sc.nextLine());
         System.out.println("Employee List");
-        EmployeeAudit<ArrayList<String>> employeeFinder = findEmployee();
-        ArrayList<String> s = employeeFinder.fetchEmployeeDetails(salaryToFind);
+        ArrayList<String> s = audit.fetchEmployeeDetails(salaryToFind);
         if (s.isEmpty()) {
           System.out.println("No Employee found");
         } else {
