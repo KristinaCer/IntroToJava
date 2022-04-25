@@ -1,5 +1,4 @@
-Employee Loan Eligibility
-
+## Employee Loan Eligibility
 
 
 
@@ -13,33 +12,33 @@ You are provided with a code template which includes the following classes:
 
 ·         A main class with a main method which includes the entire user interface for this application.
 
-Functional Requirements:
+#### Functional Requirements:
 
-1.      Enclose your code in the getEmployeeDetails method to convert the employee details from the array of Strings to the array of Employee objects.
+1.Enclose your code in the getEmployeeDetails method to convert the employee details from the array of Strings to the array of Employee objects.
 
-2.      Enclose your code in the getStreamOfEmployee method to convert the employee details from the array of Employee to the Stream of Employee.
+2.Enclose your code in the getStreamOfEmployee method to convert the employee details from the array of Employee to the Stream of Employee.
 
-3.      Enclose your code in the shortlistedEmployee method to segregate the employee details that have at-least the minimumSalary value as their salary and return the sorted order of employee details based on empId as a String array.
+3.Enclose your code in the shortlistedEmployee method to segregate the employee details that have at-least the minimumSalary value as their salary and return the sorted order of employee details based on empId as a String array.
 
-User Interface Requirements:
+#### User Interface Requirements:
 
-·         All the User Interface requirements will be provided in the code template itself. Adhere to the code template. Enclose your code in the respective required blocks of the EmployeeUtility class alone.
+All the User Interface requirements will be provided in the code template itself. Adhere to the code template. Enclose your code in the respective required blocks of the EmployeeUtility class alone.
 
-Note:
+#### Note:
 
-·         The input format for each employee details is “<empId;empName;salary>”
+·The input format for each employee details is “<empId;empName;salary>”
 
-·         The Output format for each employee details is “<empId> <empName> <salary>”
+·The Output format for each employee details is “<empId> <empName> <salary>”
 
-·         The empId may start with a numerical value or an alphabet as given in sample input and assume that all the empIds are unique. The output should be in ascending order based on the empId.
+·The empId may start with a numerical value or an alphabet as given in sample input and assume that all the empIds are unique. The output should be in ascending order based on the empId.
 
-·         Do not edit or delete the codes provided in the code template.
+· Do not edit or delete the codes provided in the code template.
 
-·         Adhere to the Sample Inputs/ Outputs.
+· Adhere to the Sample Inputs/ Outputs.
 
-·         In the Sample Inputs/ Outputs provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
+· In the Sample Inputs/ Outputs provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
 
-Sample Input 1:
+#### Sample Input 1:
 
 Enter the number of Employees
 
@@ -61,7 +60,7 @@ Enter the minimum eligible salary
 
 30000
 
-Sample Output 1:
+#### Sample Output 1:
 
 Shortlisted Employees are
 
@@ -71,7 +70,7 @@ Shortlisted Employees are
 
 103 Sai Shankar 35000.0
 
-Sample Input 2:
+#### Sample Input 2:
 
 Enter the number of Employees
 
@@ -103,7 +102,7 @@ Enter the minimum eligible salary
 
 25000
 
-Sample Output 2:
+#### Sample Output 2:
 
 Shortlisted Employees are
 
@@ -119,7 +118,7 @@ B102 Grace 30000.0
 
 B104 Akbar 26000.0
 
-Sample Input 3:
+#### Sample Input 3:
 
 Enter the number of Employees
 
@@ -139,6 +138,6 @@ Enter the minimum eligible salary
 
 35000
 
-Sample Output 3:
+#### Sample Output 3:
 
 No Employee is having the required salary
